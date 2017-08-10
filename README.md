@@ -1,24 +1,23 @@
-# README
+# TWEEPS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Dependencies:
+* Docker 17.06.0-ce +
+* rspec-rails
+* No database used
+## Run instructions:
+* Open the root folder
+* Run the following commands in terminal:
+```
+$ docker build --tag tweeps .
+$ docker run -p 3000:3000 tweeps
+```
+* Open the following URLs in your browser:
+    * http://localhost:3000/most_relevants
+    * http://localhost:3000/most_mentions
+## Test instructions:
+* Open the root folder
+* Run the following command in terminal:
+```
+$ gem install rspec-rails
+$ rspec
+```
